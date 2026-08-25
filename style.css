@@ -1,0 +1,166 @@
+h1{
+    color: rgb(143, 85, 27);
+    /*border:2px solid black;*/
+    box-shadow:
+        0 3px 5px rgba(0,0,0,0.6),
+        inset 0 0 8px rgba(0,0,0,0.5);
+    background: linear-gradient(#c59850,#836130);
+    font-family: "Trebuchet MS", sans-serif;
+}
+h3{
+    color: rgb(90, 129, 28);
+    box-shadow:
+        0 3px 5px rgba(0,0,0,0.6),
+        inset 0 0 8px rgba(0,0,0,0.5);
+    background: linear-gradient(#c59850,#836130);
+    font-family: "Trebuchet MS", sans-serif;
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    background:linear-gradient(#a0814e,#81653d);
+    border:2px solid #17130e;
+    color:#dfd7cd
+}
+input{
+    background:linear-gradient(#5c4c32,#292218);
+    border:2px solid #17130e;
+    color:#dfd7cd
+}
+button {
+    background: linear-gradient(
+        #51432c,
+        #292218
+    );
+
+    color: #e8d8b0;
+    border: 2px solid #17130e;
+    border-radius: 5px;
+
+    padding: 10px 22px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow:
+        0 3px 5px rgba(0,0,0,0.6),
+        inset 0 0 8px rgba(0,0,0,0.5);
+
+    cursor: pointer;
+}
+::selection {
+    background-color: #836130;
+    color: #f0dfb0;
+}
+#bandeau {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background:linear-gradient(#a679309e,#d0b415a7);
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+#contenuInfo {
+    width: 600px;
+    height: 300px;
+
+    /*border: 3px solid rgb(0, 0, 0);*/
+    background:linear-gradient(#a67930,#d4c677);
+
+    padding: 10px;
+    box-shadow:
+        0 3px 5px rgba(0,0,0,0.6),
+        inset 0 0 8px rgba(0,0,0,0.5);
+
+    /* Centre le texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.ligneCompte {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background:linear-gradient(#63a940,#73da59);
+}
+.ligneTrans {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background:linear-gradient(#4f8794,#39aad7);
+}
+.Conv{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background:linear-gradient(#a6a430,#d4c677);
+}
+.quetes{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background:linear-gradient(#a6a430,#d4c677);
+}
+select {
+    background: linear-gradient(#c59850, #836130);
+    color: #302517;
+
+    border: 3px solid #4a351d;
+    border-radius: 7px;
+
+    padding: 6px 10px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.4),
+        inset 0 0 8px rgba(255, 220, 150, 0.2);
+
+    cursor: pointer;
+}
+select option {
+    background-color: #836130;
+    color: #302517;
+    font-family: "Trebuchet MS", sans-serif;
+}
+.Yquetes{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background:linear-gradient(#a6a430,#d4c677);
+}
+#pub1{
+    width:700px;
+    height: 500px;
+    box-shadow:
+        0 3px 5px rgba(0,0,0,0.6),
+        inset 0 0 8px rgba(0,0,0,0.5);
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    margin: 150px;
+    background-color: #5e6a32b5;
+    background-image: url("../asset/ImgFModif.png");
+    background-position: center 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Georgia, serif;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="../styleID.css">
+    <script type="module" src="../script/accueil2.js"></script>
+    <title>Confrérie des Noires terres</title>
+</head>
+
+<body>
+<div id="SeCoo">
+<h1>se coo</h1>
+<br>
+<label for="email">E-mail :</label>
+<input type="email" id="email">
+
+<br>
+
+<label for="MDP">Mot de passe :</label>
+<input type="password" id="MDP">
+
+<br>
+
+<button onclick="recupererNom()">
+    Valider
+</button>
+</div>
+<br>
+
+<div id="ButtonCreer">
+<button onclick="AffCrCompte()">
+    Créer un compte
+</button>
+</div>
+<br>
+
+<div id="creationCompte">
+<h1>pas de compte</h1>
+<label for="Nemail">E-mail :</label>
+<input type="email" id="Nemail">
+<br>
+<label for="NMDP">Mot de passe :</label>
+<input type="password" id="NMDP">
+<br>
+<label for="nom">Nom :</label>
+<input type="text" id="Nnom">
+<br>
+<label for="métier">métier :</label>
+<input type="text" id="métier">
+<br>
+<label for="argent">argent:</label>
+<input type="text" id="argent" value="25">
+(le banquier vérifiera toujours cette déclaration)
+<br>
+<button onclick="creerCompte()">
+    Creer
+</button>
+</div>
+<br>
+
+<a href="index.html">
+Retour
+</a>
+
+</body>
+
+</html>

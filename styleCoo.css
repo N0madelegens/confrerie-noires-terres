@@ -1,0 +1,118 @@
+/* Fond général */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: #2c2418;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Titre */
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    padding: 20px 60px;
+
+    font-family: Georgia, serif;
+    font-size: 50px;
+    letter-spacing: 4px;
+
+    color: #302517;
+
+    background: linear-gradient(#c59850, #836130);
+
+    border: 3px solid #4a351d;
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.5),
+        inset 0 0 15px rgba(255, 220, 150, 0.25);
+}
+
+
+/* Texte des conditions */
+#condition {
+    width: 600px;
+    max-width: 80%;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        rgba(197, 152, 80, 0.95),
+        rgba(131, 97, 48, 0.95)
+    );
+
+    border: 2px solid #4a351d;
+    border-radius: 6px;
+
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Case à cocher */
+#coo {
+    margin-top: 30px;
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+}
+
+
+/* Texte du serment */
+#coo + * {
+    font-size: 17px;
+}
+
+
+/* Bouton connexion */
+button {
+    padding: 12px 40px;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #f0dfb0;
+
+    background: linear-gradient(#51432c, #292218);
+
+    border: 2px solid #c59850;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+    transition: 0.2s;
+}
+
+
+/* Effet quand la souris passe dessus */
+button:hover {
+    background: linear-gradient(#695738, #3b3020);
+    transform: scale(1.05);
+}
+
+
+/* Effet quand on clique */
+button:active {
+    transform: scale(0.98);
+}
+
+#serment {
+    width: 650px;
+    max-width: 85%;
+    text-align: center;
+}

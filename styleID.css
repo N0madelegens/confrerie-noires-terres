@@ -1,0 +1,219 @@
+/* =========================
+   PAGE GÉNÉRALE
+   ========================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(30, 24, 15, 0.4),
+            rgba(30, 24, 15, 0.4)
+        );
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: #2c2418;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   TITRES
+   ========================= */
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    font-size: 32px;
+    letter-spacing: 2px;
+
+    color: #c59850;
+
+    text-align: center;
+
+    text-shadow:
+        2px 2px 3px #292218;
+}
+
+
+/* =========================
+   BLOCS DE CONNEXION
+   ========================= */
+
+#SeCoo,
+#creationCompte {
+    width: 500px;
+    max-width: 80%;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            rgba(197, 152, 80, 0.95),
+            rgba(131, 97, 48, 0.95)
+        );
+
+    border: 2px solid #4a351d;
+    border-radius: 7px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   LABELS
+   ========================= */
+
+label {
+    display: inline-block;
+
+    width: 100px;
+
+    margin-top: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CHAMPS
+   ========================= */
+
+input {
+    padding: 9px 12px;
+
+    margin: 6px 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+
+    color: #302517;
+
+    background: #e2c98f;
+
+    border: 2px solid #4a351d;
+    border-radius: 4px;
+
+    outline: none;
+}
+
+
+/* Champ sélectionné */
+
+input:focus {
+    border-color: #292218;
+
+    box-shadow:
+        0 0 0 2px rgba(81, 67, 44, 0.3);
+}
+
+
+/* =========================
+   BOUTONS
+   ========================= */
+
+button {
+    padding: 10px 25px;
+
+    margin: 12px 5px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    color: #f0dfb0;
+
+    background: linear-gradient(#51432c, #292218);
+
+    border: 2px solid #c59850;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+    transition:
+        transform 0.15s,
+        background 0.15s;
+}
+
+
+button:hover {
+    background: linear-gradient(#695738, #3b3020);
+
+    transform: scale(1.05);
+}
+
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   BOUTON CRÉER UN COMPTE
+   ========================= */
+
+#ButtonCreer {
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   TEXTE AUTOUR DES CHAMPS
+   ========================= */
+
+#creationCompte {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   LIEN RETOUR
+   ========================= */
+
+a {
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    padding: 10px 25px;
+
+    color: #f0dfb0;
+
+    background: linear-gradient(#51432c, #292218);
+
+    border: 2px solid #c59850;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+    transition: 0.2s;
+}
+
+
+a:hover {
+    background: linear-gradient(#695738, #3b3020);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   SÉLECTION DU TEXTE
+   ========================= */
+
+::selection {
+    background-color: #836130;
+    color: #f0dfb0;
+}

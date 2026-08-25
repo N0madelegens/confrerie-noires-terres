@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="../style.css">
+    <script type="module" src="../script/princ.js"></script>
+    <title>Confrérie des Noires terres</title>
+</head>
+<body>
+    <div id="bandeau">
+
+    <p id="currentCompte">
+        Info sur compte
+    </p>
+
+    <button onclick="allerForum()">
+        forum
+    </button>
+
+    <button onclick="allerGuildes()">
+        membres
+    </button>
+
+    <button onclick="allerTransactions()">
+        transactions
+    </button>
+
+    <button onclick="allerQuêtes()">
+        quêtes
+    </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="info">
+        <p id="contenuInfo">
+            Ceci est l'endroit ou vous pourrez retrouver toutes vos nouveautées et infos.
+        </p>
+        <div id="ifMODO">
+            <button onclick="ModifInfo()">
+                modif info
+            </button>
+            <div id="modifInfo">
+                <button onclick="ValidModifInfo()">
+                valider
+                </button>
+                <br>
+                <textarea id="Info" oninput="autoResize(this)">
+
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <div id="forum">
+        <br>
+        <br>
+        <br>
+        <h1>Forum</h1>
+        <div id="zoneF">
+
+        </div>
+        <textarea id="MessF" oninput="autoResize(this)">
+        </textarea>
+        <br>
+        <button onclick="AddMsg()">
+                publier
+        </button>
+        <br>
+        <div id="ifModo">
+            <label for="num">Num :</label>
+            <input type="text" id="num">
+            <button onclick="SupprMsg()">
+                Suppr ce message
+            </button>
+        </div>
+    </div>
+    <div id="guildes">
+        <br>
+        <br>
+        <br>
+        <h1>membres de la Confrérie:</h1>
+        <div id="listeComptes"></div>
+    </div>
+    <div id="transactions">
+        <br>
+        <br>
+        <br>
+        <h1>transactions non encore validé par le banquier</h1>
+        <div id="transact"></div>
+        <div id="ifBanquier">
+            valider transaction
+            <br>
+            <label for="numT">Num :</label>
+            <input type="text" id="numT">
+            <button onclick="ValidTransact()">
+                Valider
+            </button>
+            <br>
+        </div>
+        <button onclick="AddT()">
+                add transaction
+        </button>
+        <div id="addT">
+            <br>
+            acheteur:
+            <select id="dest"></select>
+            vendeur:
+            <select id="exp"></select>
+            <br>
+            <label for="argent">argent :</label>
+            <input type="text" id="argent">
+            <label for="expl">obj :</label>
+            <input type="text" id="expl">
+            <br>
+            <button onclick="ValidT()">
+                valider
+            </button>
+
+        </div>
+    </div>
+    <div id="quêtes">
+        <br>
+        <br>
+        <br>
+        <h1>Quêtes</h1>
+        <div id="Quêtes">
+
+        </div>
+        <label for="numT">Num :</label>
+        <input type="text" id="numMQ">
+        <button onclick="makeQu()">
+            Faire cette quêtes
+        </button>
+        <br>
+        <label for="numT">desc :</label>
+        <input type="text" id="descNQ">
+        <button onclick="AddQu()">
+            ajouter cette quêtes
+        </button>
+        <br>
+        <div id="YQ">
+            <h3>vos quêtes</h3>
+        <div id="quêtesV">
+            </div>
+            <label for="numT">Num :</label>
+            <input type="text" id="numVQ">
+            <button onclick="ValidQu()">
+                Supprimer cette quête
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <h3> sponso par:</h3>
+    <img id="pub1" src="../asset/imgPub1.jpg">
+
+    <br>
+</body>
+
+</html>
